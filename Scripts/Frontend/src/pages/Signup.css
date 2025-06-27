@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+.signup-page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* ✅ Navbar (same as in Home) */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(to right, #01579b, #4db6ac);
+  padding: 10px 30px;
+  font-family: 'Times New Roman';
+  font-size: 3rem;
+  height: 60px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+.logo {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #e0f7fa;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 1.5rem;
+  padding: 8px 16px;
+  border-radius: 6px;
+  transition: all 0.3s ease-in-out;
+}
+
+.nav-links a:hover {
+  background-color: rgba(255, 255, 255, 0.15);
+  color: #f1f8e9;
+  transform: scale(1.05);
+}
+
+/* ✅ Signup background */
+.signup-background {
+  flex: 1;
+  background: linear-gradient(135deg, #e0f7fa, #f1f8e9);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Poppins', sans-serif;
+  padding: 30px 0;
+}
+
+.signup-container {
+  background-color: white;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  animation: fadeSlide 0.6s ease-in-out;
+}
+
+.signup-title {
+  font-weight: 600;
+  text-align: center;
+  color: #2e7d32;
+  margin-bottom: 25px;
+}
+
+.signup-button {
+  background: linear-gradient(to right, #00bcd4, #4caf50);
+  color: white;
+  font-weight: 600;
+  font-size: 1.1rem;
+  border-radius: 30px;
+  padding: 12px;
+  margin-top: 15px;
+  transition: 0.3s ease-in-out;
+}
+
+.signup-button:hover {
+  background: linear-gradient(to right, #00838f, #388e3c);
+  transform: scale(1.03);
+}
+
+@keyframes fadeSlide {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

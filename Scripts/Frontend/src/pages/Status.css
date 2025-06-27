@@ -1,0 +1,205 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(to right, #e3f2fd, #e0f7fa);
+  color: #1a1a1a;
+}
+
+.status-page {
+  min-height: 100vh;
+}
+
+/* Navbar */
+.status-navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(to right, #01579b, #4db6ac);
+  padding: 18px 40px;
+  color: #ffffff;
+  font-size: 1.25rem;
+  font-weight: bold;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+/* Wrapper for all complaints */
+.status-wrapper {
+  max-width: 1100px;
+  margin: 40px auto;
+  padding: 0 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+/* Each complaint card */
+.complaint-card {
+  background-color: #ffffff;
+  border-radius: 20px;
+  padding: 32px;
+  box-shadow: 0 10px 30px rgba(0, 150, 136, 0.2);
+  border-left: 8px solid #0288d1;
+  transition: transform 0.3s ease;
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
+
+.complaint-card:hover {
+  transform: scale(1.015);
+}
+
+/* Stylish Badge */
+.status-badge {
+  display: inline-block;
+  margin-top: 12px;
+  padding: 10px 22px;
+  border-radius: 40px;
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: #fff;
+}
+
+.status-resolved {
+  background: linear-gradient(to right, #a5d6a7, #66bb6a);
+  border: 2px solid #388e3c;
+}
+
+.status-inprogress {
+  background: linear-gradient(to right, #fff176, #fdd835);
+  border: 2px solid #fbc02d;
+  color: #444;
+}
+
+.status-pending {
+  background: linear-gradient(to right, #ef5350, #c62828);
+  border: 2px solid #b71c1c;
+}
+
+/* Message toggle button */
+.message-btn {
+  margin-top: 20px;
+  background: #0288d1;
+  color: white;
+  padding: 10px 28px;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 30px;
+  transition: all 0.3s ease;
+  box-shadow: 0 6px 16px rgba(2, 136, 209, 0.3);
+}
+
+.message-btn:hover {
+  background: #01579b;
+  transform: scale(1.05);
+}
+
+/* Chat Area */
+.chat-box {
+  margin-top: 20px;
+  padding: 16px;
+  background: #f9fbe7;
+  border-radius: 16px;
+  border: 1px solid #c5e1a5;
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+.chat-msg {
+  padding: 14px 18px;
+  margin: 14px 0;
+  border-radius: 12px;
+  background: #e1f5fe;
+  font-size: 1rem;
+  border-left: 6px solid #0288d1;
+}
+
+.chat-msg.user {
+  background-color: #bbdefb;
+  border-left-color: #1e88e5;
+  margin-left: auto;
+  text-align: right;
+}
+
+.chat-msg.admin {
+  background-color: #c8e6c9;
+  border-left-color: #2e7d32;
+  margin-right: auto;
+  text-align: left;
+}
+
+.chat-msg strong {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.chat-msg .MuiTypography-caption {
+  font-size: 0.85rem;
+  color: #616161;
+  margin-top: 4px;
+}
+
+/* Rating styles */
+.MuiRating-root {
+  margin-top: 10px;
+  font-size: 2rem;
+}
+
+/* Send button inside chat */
+.MuiButton-contained {
+  margin-top: 10px;
+  background: linear-gradient(to right, #00acc1, #66bb6a);
+  color: white;
+  font-weight: 600;
+  text-transform: none;
+  box-shadow: 0 4px 10px rgba(76, 175, 80, 0.3);
+  padding: 8px 20px;
+  font-size: 1rem;
+  border-radius: 30px;
+}
+
+.MuiButton-contained:hover {
+  background: linear-gradient(to right, #00838f, #388e3c);
+}
+/* 🎯 Rating Section Styling */
+.rating-box {
+  margin-top: 24px;
+  padding: 16px 20px;
+  background: #e8f5e9;
+  border-radius: 16px;
+  border: 2px dashed #66bb6a;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  box-shadow: 0 6px 16px rgba(76, 175, 80, 0.2);
+}
+
+.rating-label {
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #2e7d32;
+}
+
+.rating-submit {
+  padding: 8px 24px;
+  border-radius: 30px;
+  background: linear-gradient(to right, #00acc1, #66bb6a);
+  font-weight: 600;
+  color: white;
+  text-transform: none;
+  box-shadow: 0 6px 12px rgba(0, 150, 136, 0.3);
+  transition: transform 0.2s ease;
+}
+
+.rating-submit:hover {
+  transform: scale(1.05);
+  background: linear-gradient(to right, #00838f, #388e3c);
+}
